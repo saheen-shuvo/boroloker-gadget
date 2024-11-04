@@ -1,0 +1,194 @@
+[
+  {
+    "product_id": "1",
+    "product_title": "Dell Inspiration 15",
+    "product_image": "https://i.postimg.cc/LXCf9G16/Dell-Latitude-Laptops-Dell-USA.jpg",
+    "category": "laptop",
+    "price": 599.99,
+    "description": "15.6-inch laptop with Intel i5 processor, 8GB RAM, and 256GB SSD, ideal for everyday computing.",
+    "specification": [
+      "Intel Core i5",
+      "8GB RAM",
+      "256GB SSD",
+      "15.6-inch display"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "2",
+    "product_title": "HP Pavilion x360",
+    "product_image": "https://i.postimg.cc/MZ00frJ5/HP-Pavilion-x360-2-in-1-14-Touch-Screen-Laptop-Intel-Core-i5-8-GB-Memory-512-GB-SSD-32-GB-In.jpg",
+    "category": "laptop",
+    "price": 699.99,
+    "description": "Convertible laptop with touchscreen, Intel i7 processor, 16GB RAM, and 512GB SSD.",
+    "specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "14-inch touchscreen"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "3",
+    "product_title": "iPhone 13",
+    "product_image": "https://i.postimg.cc/vHQrrLQs/iPhone.jpg",
+    "category": "iPhone",
+    "price": 799.99,
+    "description": "Apple iPhone 13 with A15 Bionic chip, 6.1-inch Super Retina XDR display, and dual-camera system.",
+    "specification": [
+      "A15 Bionic chip",
+      "6.1-inch display",
+      "Dual 12MP camera system",
+      "128GB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "4",
+    "product_title": "iPhone 13 Pro",
+    "product_image": "https://i.postimg.cc/65YdY23G/i-Phone-1.jpg",
+    "category": "iPhone",
+    "price": 999.99,
+    "description": "iPhone 13 Pro with ProMotion technology, 6.1-inch OLED display, and triple-camera system.",
+    "specification": [
+      "A15 Bionic chip",
+      "6.1-inch OLED display",
+      "Triple 12MP camera system",
+      "256GB storage"
+    ],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "product_id": "5",
+    "product_title": "Apple Watch Series 7",
+    "product_image": "https://i.postimg.cc/0NJDkVCp/Apple-Watch-Series-7-GPS-Cellular-45mm-Midnight-Aluminum-Case-with-Midnight-Sport-Band-Regular.jpg",
+    "category": "smartwatch",
+    "price": 399.99,
+    "description": "Smartwatch with ECG, blood oxygen monitoring, and larger display for health tracking.",
+    "specification": [
+      "ECG monitoring",
+      "Blood oxygen sensor",
+      "Always-On Retina display",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "6",
+    "product_title": "Samsung Galaxy Watch 4",
+    "product_image": "https://i.postimg.cc/3N3vZYQB/20mm-watch-band-for-Samsung-Galaxy-Watch-7-4-44mm-40mm-Sport-Silicone-Bracelet-Galaxy-Watch-6.jpg",
+    "category": "smartwatch",
+    "price": 349.99,
+    "description": "Galaxy Watch 4 with body composition analysis, GPS, and advanced fitness tracking.",
+    "specification": [
+      "Body composition analysis",
+      "GPS tracking",
+      "Wear OS",
+      "Water-resistant"
+    ],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": "7",
+    "product_title": "MacBook Air M1",
+    "product_image": "https://i.postimg.cc/Qxx798bN/Apple-Mac-Book-Air-with-Apple-M1-Chip-13-inch-8-GB-RAM-256-GB-SSD-Storage-Silver-Latest-Model.jpg",
+    "category": "macbook",
+    "price": 999.99,
+    "description": "Apple MacBook Air with M1 chip, 13-inch Retina display, and 256GB SSD.",
+    "specification": [
+      "Apple M1 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "13-inch Retina display"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "8",
+    "product_title": "MacBook Pro",
+    "product_image": "https://i.postimg.cc/W3vF2Tzv/Apple-Apple-Mac-Book-Pro-14-2024-M3-16-GB-1-TB-SSD-14-2-mac-OS-Plata.jpg",
+    "category": "macbook",
+    "price": 1299.99,
+    "description": "Apple MacBook Pro with M1 chip, 13-inch Retina display, and Touch Bar.",
+    "specification": [
+      "Apple M1 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "13-inch Retina display with Touch Bar"
+    ],
+    "availability": true,
+    "rating": 5.0
+  },
+  {
+    "product_id": "9",
+    "product_title": "Anker Wireless Charger",
+    "product_image": "https://i.postimg.cc/QCNFTmcY/Anker-Wireless-Charger-10-W-Max-Power-Wave-Stand-Upgraded-Qi-Certified-7-5-W-for-i-Phone-11-11-Pro.jpg",
+    "category": "accessory",
+    "price": 24.99,
+    "description": "Fast wireless charger compatible with iPhone and Android devices.",
+    "specification": [
+      "10W fast charging",
+      "Non-slip design",
+      "LED indicator",
+      "Compact size"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "10",
+    "product_title": "Apple AirPods Pro",
+    "product_image": "https://i.postimg.cc/W383TZxG/Apple-Air-Pods-PRO-2-ND-GEN-USB-C-Nebraska-Furniture-Mart.jpg",
+    "category": "accessory",
+    "price": 199.99,
+    "description": "Wireless noise-canceling earbuds with Transparency mode and spatial audio.",
+    "specification": [
+      "Active Noise Cancellation",
+      "Transparency mode",
+      "Spatial audio",
+      "Water and sweat-resistant"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "11",
+    "product_title": "Samsung Galaxy S21",
+    "product_image": "https://i.postimg.cc/jjsYK1T1/Galaxy-S21-Ultra.jpg",
+    "category": "android",
+    "price": 799.99,
+    "description": "Samsung Galaxy S21 with a 6.2-inch Dynamic AMOLED 2X display, Exynos 2100 processor, and triple-camera setup.",
+    "specification": [
+      "Exynos 2100 processor",
+      "6.2-inch Dynamic AMOLED 2X display",
+      "Triple rear camera: 64MP + 12MP + 12MP",
+      "4000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "12",
+    "product_title": "Google Pixel 6",
+    "product_image": "https://i.postimg.cc/sDvXCvmW/Google-Pixel-7-5-G-Android-Phone-Unlocked-Smartphone-with-Telephoto-Lens-256-GB-Snow.jpg",
+    "category": "android",
+    "price": 599.99,
+    "description": "Google Pixel 6 with Google Tensor chip, 6.4-inch OLED display, and an advanced dual-camera system.",
+    "specification": [
+      "Google Tensor chip",
+      "6.4-inch OLED display",
+      "Dual rear camera: 50MP + 12MP",
+      "4614mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.6
+  }
+]

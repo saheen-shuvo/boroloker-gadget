@@ -1,5 +1,6 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <section className="relative">
@@ -29,16 +30,16 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow"
+                className=" menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow"
               >
                 <li>
-                  <a>Home</a>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                  <a>Statistics</a>
+                  <NavLink>Statistics</NavLink>
                 </li>
                 <li>
-                  <a>Dashboard</a>
+                  <NavLink>Dashboard</NavLink>
                 </li>
               </ul>
             </div>
@@ -47,15 +48,15 @@ const Navbar = () => {
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-white font-semibold">
+            <ul className="menu-horizontal px-1 text-white font-semibold">
               <li>
-                <a>Home</a>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li className="mx-10">
+                <NavLink>Statistics</NavLink>
               </li>
               <li>
-                <a>Statistics</a>
-              </li>
-              <li>
-                <a>Dashboard</a>
+                <NavLink>Dashboard</NavLink>
               </li>
             </ul>
           </div>
@@ -86,7 +87,11 @@ const Navbar = () => {
         </div>
       </section>
       <div className="flex justify-center absolute left-1/2 transform -translate-x-1/2 top-80 lg:top-96 h-[220px] lg:h-[420px] w-[300px] lg:w-[800px] border-2 bg-[#ffffff6c] rounded-xl">
-        <img className="lg:h-[393px] w-[98%] lg:w-[100%] object-cover m-1 lg:m-3 rounded-xl" src="./images/banner.jpg" alt="" />
+        <img
+          className="lg:h-[393px] w-[98%] lg:w-[100%] object-cover m-1 lg:m-3 rounded-xl"
+          src="./images/banner.jpg"
+          alt=""
+        />
       </div>
     </section>
   );

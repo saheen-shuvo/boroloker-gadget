@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <div className="mt-96 bg-base-200 text-black px-2 lg:px-36 ">
+        <div className="mt-24 bg-base-200 text-black px-2 lg:px-36 ">
           <div className="pb-10 pt-4">
             <h1 className="text-center pt-10 text-3xl font-bold">Boroloker Gadget</h1>
             <p className="text-center text-xs py-2 text-gray-600">Leading the way in cutting-edge technology and innovation.</p>
