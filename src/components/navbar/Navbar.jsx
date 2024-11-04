@@ -3,7 +3,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 const Navbar = () => {
   return (
     <section className="relative">
-      <section className="h-[550px] bg-[#9538E2] mx-2 lg:mx-10 mt-1 lg:mt-5 rounded-lg lg:rounded-3xl">
+      <section className="h-[380px] lg:h-[520px] bg-[#9538E2] mx-2 lg:mx-10 mt-1 lg:mt-5 rounded-lg lg:rounded-3xl">
         <div className="navbar lg:px-16 pt-1 lg:pt-4">
           <div className="navbar-start">
             <div className="dropdown">
@@ -85,8 +85,8 @@ const Navbar = () => {
           </button>
         </div>
       </section>
-      <div className="flex justify-center absolute left-1/2 transform -translate-x-1/2 top-96">
-        <img className="object-contain " src="./images/banner.jpg" alt="" />
+      <div className="flex justify-center absolute left-1/2 transform -translate-x-1/2 top-80 lg:top-96 h-[220px] lg:h-[420px] w-[300px] lg:w-[800px] border-2 bg-[#ffffff6c] rounded-xl">
+        <img className="lg:h-[393px] w-[98%] lg:w-[100%] object-cover m-1 lg:m-3 rounded-xl" src="./images/banner.jpg" alt="" />
       </div>
     </section>
   );
