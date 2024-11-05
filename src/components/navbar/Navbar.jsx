@@ -56,7 +56,7 @@ const Navbar = ({isHome}) => {
                 <NavLink>Statistics</NavLink>
               </li>
               <li>
-                <NavLink>Dashboard</NavLink>
+                <NavLink to='/dashboard'>Dashboard</NavLink>
               </li>
             </ul>
           </div>

@@ -1,4 +1,5 @@
 
+import Gadgets from "../gadgets/Gadgets";
 import HomeSide from "../homeside/homeSide";
 
 const Homepage = () => {
