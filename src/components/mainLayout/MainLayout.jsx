@@ -1,11 +1,15 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 
+
 const MainLayout = () => {
+    const {pathname} = useLocation();
+    console.log(pathname)
+    const isHome = pathname === "/" ? true : false;
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar isHome={isHome}></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

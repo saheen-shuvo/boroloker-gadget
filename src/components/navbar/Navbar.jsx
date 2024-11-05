@@ -1,10 +1,10 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({isHome}) => {
   return (
     <section className="relative">
-      <section className="h-[380px] lg:h-[520px] bg-[#9538E2] mx-2 lg:mx-10 mt-1 lg:mt-5 rounded-lg lg:rounded-3xl">
+      <section className={` mx-2 lg:mx-10 rounded-lg lg:rounded-3xl ${isHome ? "text-white h-[380px] lg:h-[520px] bg-[#9538E2] mt-1 lg:mt-5" : "text-black"}`}>
         <div className="navbar lg:px-16 pt-1 lg:pt-4">
           <div className="navbar-start">
             <div className="dropdown">
@@ -15,7 +15,7 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-white"
+                  className="h-5 w-5 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -43,12 +43,12 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl text-white px-0 mx-0">
+            <a className={`btn btn-ghost text-xl px-0 mx-0 ${isHome ? "text-white" : "text-black"}`}>
               Boroloker Gadget
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu-horizontal px-1 text-white font-semibold">
+            <ul className={`menu-horizontal px-1 font-semibold ${isHome ? "text-white" : "text-black"}`}>
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -62,17 +62,17 @@ const Navbar = () => {
           </div>
           <div className="navbar-end"></div>
           <div className="text-xl border-2 p-1 rounded-full bg-white">
-            <a href="/">
+            <a className="text-black" href="/">
               <FiShoppingCart />
             </a>
           </div>
           <div className="text-xl border-2 p-1 rounded-full bg-white ml-2">
-            <a href="/">
+            <a className="text-black" href="/">
               <IoMdHeartEmpty />
             </a>
           </div>
         </div>
-        <div className="lg:w-[50%] mx-auto flex flex-col justify-center">
+        <div className={`lg:w-[50%] mx-auto flex-col justify-center ${isHome ? "flex" : "hidden"}`}>
           <h1 className="text-center text-white text-2xl lg:text-4xl font-bold pt-4 lg:pt-8 px-1">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
           </h1>
@@ -86,7 +86,7 @@ const Navbar = () => {
           </button>
         </div>
       </section>
-      <div className="flex justify-center absolute left-1/2 transform -translate-x-1/2 top-80 lg:top-96 h-[220px] lg:h-[420px] w-[300px] lg:w-[800px] border-2 bg-[#ffffff6c] rounded-xl">
+      <div className={`justify-center absolute left-1/2 transform -translate-x-1/2 top-80 lg:top-96 h-[220px] lg:h-[420px] w-[300px] lg:w-[800px] border-2 bg-[#ffffff6c] rounded-xl ${isHome ? "flex" : "hidden"}`}>
         <img
           className="lg:h-[393px] w-[98%] lg:w-[100%] object-cover m-1 lg:m-3 rounded-xl"
           src="./images/banner.jpg"
