@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa6";
 import { IoCart } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { CartContext } from "../../routes/cartContext";
 
 const Details = () => {
+
+  const {addToCart, cartItems} = useContext(CartContext);
+  console.log(cartItems)
   const { product_id } = useParams();
   console.log(product_id);
 
@@ -90,7 +94,7 @@ const Details = () => {
             <h3 className="ml-1 border-2 p-1 text-xs rounded-sm bg-slate-100">{findProduct?.rating}</h3>
           </div>
           <div className="flex items-center gap-2">
-          <h3 className="bg-[#9538E2] px-3 py-2 flex items-center gap-2 text-white font-semibold w-[140px] rounded-3xl pr-1"><NavLink>Add to Cart</NavLink> <IoCart /></h3>
+          <h3 className="bg-[#9538E2] px-3 py-2 flex items-center gap-2 text-white font-semibold w-[140px] rounded-3xl pr-1"><button onClick={() => addToCart(findProduct)}>Add to Cart</button> <IoCart /></h3>
           <p className=" p-2 rounded-full border-2"><IoMdHeartEmpty /></p>
           </div>
         </div>

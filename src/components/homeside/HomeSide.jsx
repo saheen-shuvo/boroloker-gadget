@@ -39,58 +39,58 @@ const HomeSide = () => {
       </h2>
       <div className="flex flex-col lg:flex-row">
         {/* Left Side */}
-        <div className="text-center font-semibold w-full lg:w-[20%] h-[380px] border-2 bg-slate-200 rounded-2xl">
+        <div className="text-center font-semibold w-full lg:w-[20%] h-[380px] bg-white rounded-2xl">
           <h3
             onClick={() => findGadgetsByCategories()}
-            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "allProduct" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "allProduct" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             All Products
           </h3>
 
           <h3
             onClick={() => findGadgetsByCategories("laptop")}
-            className={`px-4 py-2 bg-purple-400 rounded-3xl mx-3 my-3 ${isActive === "laptop" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "laptop" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             Laptops
           </h3>
 
           <h3
             onClick={() => findGadgetsByCategories("android")}
-            className={`px-4 py-2 bg-purple-400 rounded-3xl mx-3 my-3 ${isActive === "android" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "android" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             Phones
           </h3>
 
           <h3
             onClick={() => findGadgetsByCategories("accessory")}
-            className={`px-4 py-2 bg-purple-400 rounded-3xl mx-3 my-3 ${isActive === "accessory" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "accessory" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             Accessories
           </h3>
 
           <h3
             onClick={() => findGadgetsByCategories("smartwatch")}
-            className={`px-4 py-2 bg-purple-400 rounded-3xl mx-3 my-3 ${isActive === "smartwatch" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "smartwatch" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             Smart Watches
           </h3>
 
           <h3
             onClick={() => findGadgetsByCategories("macbook")}
-            className={`px-4 py-2 bg-purple-400 rounded-3xl mx-3 my-3 ${isActive === "macbook" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "macbook" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             Mac Books
           </h3>
 
           <h3
             onClick={() => findGadgetsByCategories("iPhone")}
-            className={`px-4 py-2 bg-purple-400 rounded-3xl mx-3 my-3 ${isActive === "iPhone" ? "bg-red-700" : "bg-yellow-600"}`}
+            className={`px-4 py-2 rounded-3xl mx-3 my-3 ${isActive === "iPhone" ? "bg-[#9538E2] text-white" : "bg-[#F6F6F6]"}`}
           >
             Iphone
           </h3>
         </div>
         {/* Right Side */}
-        <div className="w-full mt-3 lg:mt-0 lg:w-[80%] border-2 rounded-2xl bg-slate-200 lg:ml-4">
+        <div className="w-full mt-3 lg:mt-0 lg:w-[80%] rounded-2xl lg:ml-4">
           <Gadgets gadgets={filteredGadgets}></Gadgets>
         </div>
       </div>
