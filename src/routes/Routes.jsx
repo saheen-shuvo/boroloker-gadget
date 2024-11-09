@@ -25,7 +25,7 @@ const routes = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children: [
           {
-            index: true, // This will make Cart the default component for /dashboard
+            index: true,
             element: <Cart></Cart>,
           },
           {

@@ -7,7 +7,7 @@ import { CartContext } from "../../routes/cartContext";
 
 const Details = () => {
 
-  const {addToCart, cartItems} = useContext(CartContext);
+  const {addToCart, cartItems, addToWishlist} = useContext(CartContext);
   console.log(cartItems)
   const { product_id } = useParams();
   console.log(product_id);
@@ -95,7 +95,7 @@ const Details = () => {
           </div>
           <div className="flex items-center gap-2">
           <h3 className="bg-[#9538E2] px-3 py-2 flex items-center gap-2 text-white font-semibold w-[140px] rounded-3xl pr-1"><button onClick={() => addToCart(findProduct)}>Add to Cart</button> <IoCart /></h3>
-          <p className=" p-2 rounded-full border-2"><IoMdHeartEmpty /></p>
+          <p className=" p-2 rounded-full border-2"><button onClick={() => addToWishlist(findProduct)}><IoMdHeartEmpty /></button></p>
           </div>
         </div>
       </div>
