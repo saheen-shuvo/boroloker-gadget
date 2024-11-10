@@ -1,11 +1,16 @@
 
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { NavLink, Outlet } from "react-router-dom";
 
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState('cart');
   return (
+    <>
+        <Helmet>
+    <title>Boroloker Gadgets | Dashboard</title>
+    </Helmet>
     <div>
       {/* Banner Div */}
       <div className="bg-[#9538E2] pb-10">
@@ -27,6 +32,7 @@ const Dashboard = () => {
       </div>
       <Outlet></Outlet>
     </div>
+    </>
   );
 };
 

@@ -4,10 +4,11 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import routes from './routes/Routes'
 import { CartProvider } from './routes/cartContext'
+import { HelmetProvider } from 'react-helmet-async'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CartProvider><RouterProvider router={routes}></RouterProvider></CartProvider>
+    <HelmetProvider><CartProvider><RouterProvider router={routes}></RouterProvider></CartProvider></HelmetProvider>
   </StrictMode>,
 )

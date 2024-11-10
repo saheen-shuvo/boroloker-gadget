@@ -1,8 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+
+import { Helmet } from "react-helmet-async";
 import Bargraph from "../barGraph/Bargraph";
 
 const Statistics = () => {
   return (
+    <>
+        <Helmet>
+    <title>Boroloker Gadgets | Statistics</title>
+    </Helmet>
     <div>
       <div>
         {/* Banner Div */}
@@ -21,6 +26,7 @@ const Statistics = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

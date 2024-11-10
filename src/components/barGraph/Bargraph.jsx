@@ -57,7 +57,7 @@ const data = [
   export default function Bargraph() {
     const [gadgets, setGadgets] = useState([]);
     useEffect(() => {
-      fetch("../../../public/gadgetdata/data.json")
+      fetch("/gadgetdata/data.json")
         .then((res) => res.json())
         .then((data) => setGadgets(data));
     }, []);

@@ -17,7 +17,7 @@ const Details = () => {
   const [isInWishlist, setIsInWishlist] = useState(false);
 
   useEffect(() => {
-    fetch("../../../public/gadgetdata/data.json")
+    fetch("/gadgetdata/data.json")
       .then((res) => res.json())
       .then((data) => setGadgets(data));
   }, []);

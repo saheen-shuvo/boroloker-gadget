@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet-async";
 import Gadgets from "../gadgets/Gadgets";
 import { useEffect, useState } from "react";
 
@@ -8,7 +9,7 @@ const HomeSide = () => {
   const [isActive, setIsActive] = useState("allProduct");
 
   useEffect(() => {
-    fetch("../../../public/gadgetdata/data.json")
+    fetch("/gadgetdata/data.json")
       .then((res) => res.json())
       .then((data) => {
         setGadgets(data);
@@ -33,6 +34,10 @@ const HomeSide = () => {
 
 
   return (
+    <>
+    <Helmet>
+    <title>Boroloker Gadgets | Home</title>
+    </Helmet>
     <div className="mx-2 lg:mx-36 mt-48 lg:mt-96">
       <h2 className="text-center text-xl lg:text-4xl font-bold mb-7">
         Explore Cutting-Edge Gadgets
@@ -95,6 +100,7 @@ const HomeSide = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

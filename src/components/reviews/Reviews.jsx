@@ -1,5 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Reviews = () => {
   return (
+    <>
+        <Helmet>
+    <title>Boroloker Gadgets | Reviews</title>
+    </Helmet>
     <div>
       <div>
         {/* Banner Div */}
@@ -19,7 +25,7 @@ const Reviews = () => {
           <div class="card bg-base-100 shadow-xl">
             <figure>
               <img class="w-full"
-                src="../../../public/images/client1.jpg"
+                src="./images/client1.jpg"
                 alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -44,7 +50,7 @@ const Reviews = () => {
           <div class="card bg-base-100  shadow-xl">
             <figure>
               <img class="w-full"
-                src="../../../public/images/client2.jpg"
+                src="./images/client2.jpg"
                 alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -69,7 +75,7 @@ const Reviews = () => {
           <div class="card bg-base-100 shadow-xl">
             <figure>
               <img class="w-full"
-                src="../../../public/images/client3.jpg"
+                src="./images/client3.jpg"
                 alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -95,6 +101,7 @@ const Reviews = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 
