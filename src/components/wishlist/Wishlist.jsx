@@ -11,12 +11,12 @@ const Wishlist = () => {
     setSortedItems(wishItems);
   }, [wishItems]);
   return (
-    <div className="mx-48 mt-14">
+    <div className="mx-3 lg:mx-48 mt-14">
       <h1 className="text-xl font-semibold">Wishlist</h1>
       <div className="">
         {sortedItems.map((item) => (
-          <div className=" border-2 rounded-lg my-3 flex items-center justify-between">
-            <div className="flex items-center">
+          <div className=" border-2 rounded-lg my-3 flex flex-col lg:flex-row items-center justify-between">
+            <div className="flex flex-col lg:flex-row items-center">
               <img
                 className="w-48 h-36 rounded-lg m-2 object-cover object-top"
                 src={item.product_image}

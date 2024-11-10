@@ -6,11 +6,14 @@ import Dashboard from "../components/dashboard/Dashboard";
 import Statistics from "../components/statistics/Statistics";
 import Cart from "../components/cart/Cart";
 import Wishlist from "../components/wishlist/Wishlist";
+import Reviews from "../components/reviews/Reviews";
+import ErrorPage from "../components/error/ErrorPage";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -42,6 +45,10 @@ const routes = createBrowserRouter([
         path: "/statistics",
         element: <Statistics></Statistics>,
       },
+      {
+        path: "/reviews",
+        element: <Reviews></Reviews>
+      }
     ],
   },
 ]);

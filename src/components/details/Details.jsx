@@ -5,6 +5,7 @@ import { IoCart } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CartContext } from "../../routes/cartContext";
 
+
 const Details = () => {
 
   const {addToCart, cartItems, addToWishlist} = useContext(CartContext);
@@ -13,6 +14,7 @@ const Details = () => {
   console.log(product_id);
 
   const [gadgets, setGadgets] = useState([]);
+  const [isInWishlist, setIsInWishlist] = useState(false);
 
   useEffect(() => {
     fetch("../../../public/gadgetdata/data.json")
@@ -24,6 +26,11 @@ const Details = () => {
     (gadget) => gadget?.product_id === product_id
   );
   console.log(findProduct?.product_title);
+
+  const handleAddToWishlist = () => {
+    addToWishlist(findProduct);
+    setIsInWishlist(true);
+  };
 
   return (
     <div className="relative mb-96">
@@ -94,11 +101,14 @@ const Details = () => {
             <h3 className="ml-1 border-2 p-1 text-xs rounded-sm bg-slate-100">{findProduct?.rating}</h3>
           </div>
           <div className="flex items-center gap-2">
-          <h3 className="bg-[#9538E2] px-3 py-2 flex items-center gap-2 text-white font-semibold w-[140px] rounded-3xl pr-1"><button onClick={() => addToCart(findProduct)}>Add to Cart</button> <IoCart /></h3>
-          <p className=" p-2 rounded-full border-2"><button onClick={() => addToWishlist(findProduct)}><IoMdHeartEmpty /></button></p>
+          <button onClick={() => addToCart(findProduct)} className="bg-[#9538E2] px-3 py-2 flex items-center gap-2 text-white font-semibold w-[140px] rounded-3xl pr-1 btn"><button>Add to Cart</button> <IoCart /></button>
+          <p className=" p-2 rounded-full border-2">
+            <button className={`${isInWishlist ? "opacity-50 cursor-not-allowed" : ""}`}
+          disabled={isInWishlist} onClick={() => handleAddToWishlist(findProduct)}><IoMdHeartEmpty /></button></p>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

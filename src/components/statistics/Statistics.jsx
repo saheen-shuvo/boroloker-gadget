@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Bargraph from "../barGraph/Bargraph";
 
 const Statistics = () => {
   return (
@@ -15,7 +16,9 @@ const Statistics = () => {
             it all!
           </p>
         </div>
-        <Outlet></Outlet>
+        <div className="flex justify-center mt-10"> 
+        <Bargraph></Bargraph>
+        </div>
       </div>
     </div>
   );

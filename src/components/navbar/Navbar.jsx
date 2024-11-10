@@ -1,6 +1,7 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import bannerImg from '../../../public/images/banner.jpg'
 const Navbar = ({ isHome }) => {
   return (
     <section className="relative pt-1 lg:pt-5">
@@ -46,6 +47,9 @@ const Navbar = ({ isHome }) => {
                 </li>
                 <li>
                   <NavLink to="/dashboard">Dashboard</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/reviews">Reviews</NavLink>
                 </li>
               </ul>
             </div>
@@ -101,18 +105,32 @@ const Navbar = ({ isHome }) => {
                   Dashboard
                 </NavLink>
               </li>
+              <li className="mx-10">
+                <NavLink
+                  to="/reviews"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "bg-green-600"
+                      : isActive
+                      ? "text-[#9538E2]"
+                      : ""
+                  }
+                >
+                  Reviews
+                </NavLink>
+              </li>
             </ul>
           </div>
           <div className="navbar-end"></div>
           <div className="text-xl border-2 p-1 rounded-full bg-white">
-            <a className="text-black" href="/">
+            <NavLink className="text-black" to='/dashboard/cart'>
               <FiShoppingCart />
-            </a>
+            </NavLink>
           </div>
           <div className="text-xl border-2 p-1 rounded-full bg-white ml-2">
-            <a className="text-black" href="/">
+            <NavLink className="text-black" to='/dashboard/wishlist'>
               <IoMdHeartEmpty />
-            </a>
+            </NavLink>
           </div>
         </div>
         <div
@@ -140,7 +158,7 @@ const Navbar = ({ isHome }) => {
       >
         <img
           className="lg:h-[393px] w-[98%] lg:w-[100%] object-cover m-1 lg:m-3 rounded-xl"
-          src="./images/banner.jpg"
+          src={bannerImg}
           alt=""
         />
       </div>

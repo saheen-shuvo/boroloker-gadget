@@ -68,7 +68,7 @@
     "product_title": "Apple Watch Series 7",
     "product_image": "https://i.postimg.cc/0NJDkVCp/Apple-Watch-Series-7-GPS-Cellular-45mm-Midnight-Aluminum-Case-with-Midnight-Sport-Band-Regular.jpg",
     "category": "smartwatch",
-    "price": 399.99,
+    "price": "399.99",
     "description": "Smartwatch with ECG, blood oxygen monitoring, and larger display for health tracking.",
     "specification": [
       "ECG monitoring",

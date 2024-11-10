@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<!-- Font Awesome CDN  -->
+<script src="https://kit.fontawesome.com/6e7928898c.js" crossorigin="anonymous"></script>
+<!-- Google Font CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- DaisyUi CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- CSS Style Tag -->
+<style>
+    .poppins-font{
+    font-family: "Poppins", system-ui;
+    }
+    /* .bg-img{
+      background-image: url('./assets/bg.jpg');
+      background-size: cover;
+      height: 850px;
+      width: 100%;
+    } */
+</style>
+<body data-theme="light">
+    <!-- Header-->
+    <header>
+        <!-- Banner Section -->
+        <section class="px-2 lg:px-24">
+            <!-- Nav Bar -->
+            <div class="navbar bg-base-100 flex ">
+                <div class="">
+                  <a class="btn btn-ghost text-2xl poppins-font"><i class="fa-sharp fa-solid fa-arrow-right bg-[#9fec42] -rotate-45 rounded-full p-1 border-none"></i> Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 poppins-font">
+                    <li class="font-semibold"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:flex px-3 gap-3">
+                        <i class="fa-solid fa-cart-shopping bg-slate-100 p-2 rounded-full"></i>
+                        <i class="fa-sharp fa-solid fa-magnifying-glass  bg-slate-100 p-2 rounded-full"></i>
+                    </div>
+                  <button class="btn rounded-3xl bg-[#9fec42] text-blue-950 poppins-fon poppins-font hidden lg:block">Book Consult <i class="fa-sharp fa-solid fa-arrow-right -rotate-45  rounded-full text-white bg-blue-950 p-1"></i></button>
+                  <i class="fa-sharp fa-solid fa-bars lg:hidden"></i>
+                </div>
+            </div>
+            <!-- Banner Content -->
+            <div class="hero">
+              <div class="hero-content text-center">
+                <div class="">
+                  <img class="mx-auto mb-8" src="./assets/banner.png" alt="">
+                  <h1 class="text-5xl font-bold poppins-font">A barn house of this design has a striking appearance</h1>
+                  <p class="py-6 poppins-font">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                  </p>
+                  <button class="btn rounded-3xl bg-[#90ca49d2] w-full lg:w-40">View Details <i class="fa-sharp fa-solid fa-arrow-right -rotate-45  rounded-full text-blue-950 bg-[#9fec42] p-1"></i></button>
+                </div>
+              </div>
+            </div>
+        </section>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Design Thoughtful Section -->
+      <section class="hero bg-base-200 mt-16 lg:mt-24">
+          <div class="hero-content gap-10 flex-col-reverse py-14 lg:py-20 lg:flex-row-reverse">
+            <img
+              src="./assets/Rectangle.png"
+              class="w-full lg:w-2/4 h-full rounded-lg shadow-2xl" />
+            <div>
+              <div class="flex flex-col text-center lg:text-left">
+                <div class="-ml-8 mb-2 hidden lg:block"><img class="" src="./assets/Vector.png" alt=""></div>
+              <button class="btn bg-white text-black rounded-full py-1 mb-3 px-5 w-40 mx-auto lg:mx-0"><i class="fa-sharp fa-solid fa-arrow-right rounded-full p-1 border-none"></i>About Us</button>
+              <h1 class="text-2xl poppins-font font-bold lg:text-5xl">We design thoughtful,<br> liveable spaces</h1>
+              <p class="py-3 poppins-font">
+                The barn house captivates with its blend of rustic charm and 
+modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              </div>
+              <!-- Card-1 -->
+              <div class="card card-side bg-base-100 shadow-xl px-5 mb-4">
+                <div class="my-auto">
+                  <img
+                    src="./assets/commercial.png"
+                    alt="Movie" />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title poppins-font">Commercial</h2>
+                  <p class="poppins-font">The commercial apartments captivates with its mix of rustic natural and modern.</p>
+                </div>
+              </div>
+              <!-- Card-2 -->
+              <div class="card card-side bg-base-100 shadow-xl px-5">
+                <div class="my-auto">
+                  <img
+                    src="./assets/residential.png"
+                    alt="Movie" />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title poppins-font">Residential</h2>
+                  <p class="poppins-font">The Residential Houses captivates with huge amount of rustic natural and modern.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Work Process Section -->
+      <section class="bg-base-200 pt-14 pb-24 lg:pt-20 px-2 lg:px-24">
+        <!-- Text Content -->
+         <div>
+          <div class="flex flex-col">
+            <button class="btn bg-white text-black rounded-full py-1 mb-3 px-5 w-44 mx-auto lg:w-48"><i class="fa-sharp fa-solid fa-arrow-right rounded-full p-1 border-none"></i>How we works</button>
+            <h1 class="text-2xl poppins-font font-bold text-center lg:text-5xl">Our Works Process</h1>
+            <p class="py-6 text-center poppins-font">Our work process is so attractive, its  modern sophistication, featuring weathered wood,<br> sleek metal accents. You will love the process how it runs.</p>
+          </div>
+         </div>
+         <!-- Grid Layout -->
+          <div class="flex flex-col gap-4 lg:flex-row">
+            <!-- Card-1 -->
+             <div class="lg:w-1/4">
+              <div class="card card-compact bg-base-100 shadow-xl bg-[#E7C1D3] h-full">
+                <figure>
+                  <img class="mr-auto pt-3 pl-3"
+                    src="./assets/concept.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title poppins-font">Concept</h2>
+                  <p class="poppins-font">A work-residential building combines living and working spaces, optimizing functionality and reducing commute times.</p>
+                </div>
+              </div>
+             </div>
+             <!-- Card-2 -->
+             <div class="lg:w-1/4">
+              <div class="card card-compact bg-base-100 shadow-xl bg-[#EFDA6E] h-full">
+                <figure>
+                  <img class="mr-auto pt-3 pl-3"
+                    src="./assets/flow-chart.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title poppins-font">Design Process</h2>
+                  <p class="poppins-font">The design process involves conceptualizing, creating, and refining ideas to solve problems and meet needs.</p>
+                </div>
+              </div>
+             </div>
+             <!-- Card-3 -->
+             <div class="lg:w-1/4">
+              <div class="card card-compact bg-base-100 shadow-xl bg-[#A4DAC3] h-full">
+                <figure>
+                  <img class="mr-auto pt-3 pl-3"
+                    src="./assets/vision.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title poppins-font">Supervision</h2>
+                  <p class="poppins-font">Supervision involves overseeing tasks and guiding individuals to ensure goals are met efficiently and effectively.</p>
+                </div>
+              </div>
+             </div>
+             <!-- Card-4 -->
+             <div class="lg:w-1/4">
+              <div class="card card-compact bg-base-100 shadow-xl bg-[#77AAEA] h-full">
+                <figure>
+                  <img class="mr-auto pt-3 pl-3"
+                    src="./assets/budget-planning.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title poppins-font">Budget Planning</h2>
+                  <p class="poppins-font">Budget planning involves allocating financial resources, forecasting expenses, and managing funds to achieve financial goals.</p>
+                </div>
+              </div>
+             </div>
+          </div>
+
+      </section>
+      <!-- Latest Portfolio Section -->
+       <section class="px-2 mt-16 lg:mt-24 lg:px-24">
+        <!-- Text Content -->
+        <div class="flex flex-col justify-center">
+          <button class="btn border-none poppins-font bg-[#9fec4263] text-blue-950 rounded-full mb-3 w-60 mx-auto lg:w-60"><i class="fa-sharp fa-solid fa-arrow-right rounded-full p-1  border-none"></i>Explore our Latest works</button>
+          <h1 class="text-2xl poppins-font font-bold text-center lg:text-5xl">Our Latest Portfolio</h1>
+          <p class="text-center poppins-font py-4">Review our latest portfolio to see our freshest projects and innovative solutions. Your feedback is valuable!<br>The upcoming works, deadlines, and many other works.</p>
+        </div>
+        <!-- Img Content -->
+         <div class="mb-16 lg:mb-24">
+          <!-- first row -->
+           <div class="flex gap-3 flex-col lg:flex-row">
+              <div class="card card-side border-2 p-3 border-[#7373735a] flex flex-col lg:flex-row">
+                <figure>
+                  <img class="w-full h-full"
+                    src="./assets/img1.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Commercial</h2>
+                  <p>Check out commercial things soon to know more.We are always ready to provide you best design.</p>
+                  <h4 class="text-base font-semibold">View Details <i class="fa-sharp fa-solid fa-arrow-right bg-[#9fec42] -rotate-45 rounded-full p-1 border-none"></i></h4>
+                </div>
+              </div>
+              <div class="border-2 p-3 rounded-2xl border-[#7373735a] ">
+                <img class="w-full h-full" src="./assets/img2.png" alt="">
+              </div>
+           </div>
+           <!-- 2nd-Row -->
+            <div class="flex gap-3 pt-3 flex-col lg:flex-row">
+              <div class="border-2 p-3 rounded-2xl border-[#7373735a]">
+                <img class="w-full h-full" src="./assets/img3.png" alt="">
+              </div>
+              <div class="card card-side border-2 p-3 border-[#7373735a] flex flex-col lg:flex-row">
+                <figure>
+                  <img class="w-full h-full"
+                    src="./assets/img4.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Commercial</h2>
+                  <p>Check out commercial things soon to know more.We are always ready to provide you best design.</p>
+                  <h4 class="text-base font-semibold">View Details <i class="fa-sharp fa-solid fa-arrow-right bg-[#9fec42] -rotate-45 rounded-full p-1 border-none"></i></h4>
+                </div>
+              </div>
+              <div class="border-2 p-3 rounded-2xl border-[#7373735a] flex items-center justify-center">
+                <img class="w-full h-full" src="./assets/img5.png" alt="">
+              </div>
+            </div>
+         </div>
+       </section>
+       <!-- Client Review Section -->
+         <section class="mt-16 mb-16 px-2 lg:px-24 lg:mb-24 lg:mt-24">
+          <h1 class="text-3xl font-bold text-center mb-14 poppins-font lg:text-5xl">Client's <span class="text-[#9fec42]">Reviews</span></h1>
+          <!-- Card-container -->
+           <div class="grid justify-center grid-rows-3  gap-9 lg:grid-rows-1 lg:grid-cols-3 ">
+                        <!-- Card-1 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full"
+                src="./assets/client1.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <p class="text-center">"Stunning transformation, elegant design, and attention to every detail. Perfect!"</p>
+                <div class="rating mx-auto">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div>
+                  <h3 class="text-center text-lg font-semibold text-blue-500">Saheen Shuvo</h3>
+                  <h3 class="text-center text-base font-medium">Student</h3>
+                </div>
+            </div>
+          </div>
+          <!-- Card-2 -->
+          <div class="card bg-base-100  shadow-xl">
+            <figure>
+              <img class="w-full"
+                src="./assets/client2.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <p class="text-center">"Exceptional design! My apartment feels luxurious, stylish, and cozy. Every detail was thoughtfully executed. Highly recommended!"</p>
+                <div class="rating mx-auto">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div>
+                  <h3 class="text-center text-lg font-semibold text-blue-500">Rehinna Swift</h3>
+                  <h3 class="text-center text-base font-medium">Teacher</h3>
+                </div>
+            </div>
+          </div>
+          <!-- Card-3 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full"
+                src="./assets/client3.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <p class="text-center">"Beautifully crafted, modern design with a cozy feel. Exceeded expectations!"</p>
+                <div class="rating mx-auto">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div>
+                  <h3 class="text-center text-lg font-semibold text-blue-500">Sophia Zemen</h3>
+                  <h3 class="text-center text-base font-medium">Banker</h3>
+                </div>
+            </div>
+          </div>
+           </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="flex  justify-center mb-24 w-full px-2 lg:px-24">
+            <div class="stats shadow flex flex-col lg:flex-row">
+              <div class="stat">
+                <div class="stat-figure text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-8 w-8 stroke-current">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div class="stat-title">Completed Project</div>
+                <div class="stat-value">7,189</div>
+                <div class="stat-desc">Jan 1st  2022- Feb 1st 2024</div>
+              </div>
+            
+              <div class="stat">
+                <div class="stat-figure text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-8 w-8 stroke-current">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                  </svg>
+                </div>
+                <div class="stat-title">Ongoing Projects</div>
+                <div class="stat-value">1,126</div>
+                <div class="stat-desc">↗︎ 400 (22%)</div>
+              </div>
+            
+              <div class="stat">
+                <div class="stat-figure text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-8 w-8 stroke-current">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                  </svg>
+                </div>
+                <div class="stat-title">New Registers</div>
+                <div class="stat-value">1,200</div>
+                <div class="stat-desc">↘︎ 90 (14%)</div>
+              </div>
+            </div>
+        </section>
+      <!-- Lets Discuss Section -->
+      <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover pb-20 px-3 lg:px-24">
+        <!-- Text Content -->
+         <div class="flex flex-col justify-center">
+          <button class="btn border-none poppins-font bg-[#9fec42bd] text-blue-950 rounded-full mt-20 mb-3 w-44 mx-auto lg:w-48"><i class="fa-sharp fa-solid fa-arrow-right rounded-full p-1  border-none"></i>Let's Connect</button>
+          <h1 class="text-2xl poppins-font font-bold text-center lg:text-5xl">Let’s Discuss Next Project</h1>
+          <p class="text-center poppins-font py-4">Let’s discuss our next project: goals, deadlines, and strategies to ensure successful completion and discuss <br>the next things, deadlines, and so on.</p>
+        </div>
+        <!-- Form Content Grid -->
+         <div class="grid grid-rows-2 grid-cols-2 gap-5">
+          <!-- Row-1 -->
+           <div>
+            <!-- first Name -->
+            <input type="text" placeholder="First Name*" class="input rounded-full input-bordered w-full py-7">
+           </div>
+           <div>
+            <!-- Last Name -->
+            <input type="text" placeholder="Last Name*" class="input rounded-full input-bordered w-full py-7">
+           </div>
+           <div>
+            <!-- Phone Number -->
+            <input type="text" placeholder="Phone Number*" class="input input-bordered rounded-full w-full py-7">
+           </div>
+           <div>
+            <!-- Email Address -->
+            <input type="text" placeholder="Email Address*" class="input input-bordered rounded-full w-full py-7">
+           </div>
+        </div>
+        <div>
+          <!-- Write Message -->
+          <textarea class="w-full h-52 rounded-2xl mt-5 pl-4 pt-4 border-2" placeholder="Write Your Message Here*"></textarea>
+        </div>
+        <div class="flex justify-center"><button class="btn border-none poppins-font bg-[#9fec42] text-blue-950 rounded-full mt-10 mb-3 w-full mx-auto lg:w-full">Send Mail<i class="fa-sharp fa-solid fa-arrow-right rounded-full p-1 border-none bg-blue-950 text-white -rotate-45"></i></button></div>
+      </section>
+    </main>
+    <!-- Footer -->
+     <footer>
+      <!-- Footer Section -->
+       <section class="bg-[#1C1C1C] px-2 lg:px-24">
+        <div class="flex flex-col justify-center pt-20">
+          <a class="btn btn-ghost text-2xl poppins-font text-white"><i class="fa-sharp fa-solid fa-arrow-right bg-[#9fec42] -rotate-45 rounded-full p-1 border-none text-blue-950"></i> Rinterio</a>
+          <p class="text-center poppins-font py-4 text-[#737373]">The Rinterio captivates with its blend of rustic charm and modern sophistication,<br>featuring weathered wood, sleek metal accents.</p>
+          <div class="mx-auto">
+            <ul class="menu menu-horizontal flex flex-col gap-5 justify-center poppins-font text-white lg:gap-8 lg:flex-row">
+              <li class=""><a class="mx-auto">Home</a></li>
+              <li><a class="mx-auto">Services</a></li>
+              <li><Portfolio class="mx-auto">Portfolio</a></li>
+              <li><a class="mx-auto">Blogs</a></li>
+              <li><a class="mx-auto">Contact Us</a></li>
+            </ul>
+          </div>
+          <button class="btn border-none poppins-font bg-[#9fec42bd] text-blue-950 rounded-full mt-10 mb-20 w-full mx-auto lg:w-48">Book Consult<i class="fa-sharp fa-solid fa-arrow-right rounded-full p-1 border-none bg-blue-950 text-white -rotate-45"></i></button>
+        </div>
+       </section>
+     </footer>
+</body>
+</html>

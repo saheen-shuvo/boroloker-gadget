@@ -15,7 +15,7 @@ const Gadget = ({ gadget }) => {
         <div className="card-body">
           <h2 className="card-title">{product_title}</h2>
           <p>Price: {price}$</p>
-          <div className="border-2 text-center py-1 rounded-3xl border-[#9538E2] text-[#9538E2] font-semibold">
+          <div className="btn border-2 text-center py-1 rounded-3xl border-[#9538E2] text-[#9538E2] font-semibold">
             <NavLink to={`/details/${product_id}`}>View Details</NavLink>
           </div>
         </div>
