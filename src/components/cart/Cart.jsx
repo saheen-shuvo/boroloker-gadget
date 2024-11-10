@@ -102,7 +102,7 @@ const Cart = () => {
           <img className="mx-auto" src="../../../public/images/Group.png" alt="" />
           <h3 className="font-bold text-xl text-center pt-4">Payment Successfully!</h3>
           <p className="py-4 text-center">Thanks for purchasing<br></br>
-            Your total Bil: ${totalCost.toFixed(2)}
+            Your total Bil: ${totalCost?.toFixed(2)}
           </p>
           <div className="modal-action mt-0 flex justify-center">
             <form method="dialog">
